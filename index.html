@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html>
-<body>
+<style>
+p.test {
+	line-height: 180%;
+}
+</style>
+
+<body style="font-family:courier new;">
 <h1>Hello World</h1>
-<h2>Fixes<h2>
-<h3>Startup Brightness<h3>
-<p>Edit the file, run "sudo -H gedit /etc/rc.local" 
-https://askubuntu.com/questions/151651/brightness-is-reset-to-maximum-on-every-restart
+<h2>Fixes</h2>
+
+<h3>Startup Brightness</h3>
+<p class="test"> 
+<b> >> sudo -H gedit /etc/rc.local </b><br>
+add:<br>
+<b> >> echo X > /sys/class/backlight/intel_backlight/brightness </b> <br>
+with X being the desired brightness <br>
+<a href="http://askubuntu.com/a/151665">src</a>
 </p>
+
+<h3>Dropbox Icon Fix</h3>
+<p class="test">
+<b> >> sudo gedit /usr/bin/dropbox </b><br>
+create a new line after <b>import os</b> and add:<br>
+<b> >> os.environ['DBUS_SESSION_BUS_ADDRESS'] = "" </b><br>
+Save and reboot <br>
+<a href="http://askubuntu.com/a/744500">src</a>
+
 <p>I'm hosted with GitHub Pages.</p>
 </body>
 </html>
