@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<style>
+p.test {
+	line-height: 180%;
+}
+</style>
+
+<head>
+<link rel="icon" href="https://avatars2.githubusercontent.com/u/5669405?v=3&s=140>
+<title>tw</title>
+</head>
+
+<body style="font-family:courier new;">
+<h1>Hello World</h1>
+<h2>Fixes</h2>
+
+<h3>Startup Brightness</h3>
+<p class="test"> 
+<b> >> sudo -H gedit /etc/rc.local </b><br>
+add:<br>
+<b> >> echo X > /sys/class/backlight/intel_backlight/brightness </b> <br>
+with X being the desired brightness <br>
+<a href="http://askubuntu.com/a/151665">src</a>
+</p>
+
+<h3>Dropbox Icon Fix</h3>
+<p class="test">
+<b> >> sudo gedit /usr/bin/dropbox </b><br>
+create a new line after <b>import os</b> and add:<br>
+<b> >> os.environ['DBUS_SESSION_BUS_ADDRESS'] = "" </b><br>
+Save and reboot <br>
+<a href="http://askubuntu.com/a/744500">src</a>
+
+</body>
+
+<footer>
+<p>I'm hosted with GitHub Pages.</p>
+</footer>
+
+</html>
