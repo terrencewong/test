@@ -20,8 +20,9 @@ layout: default
 <div class="page">
   {{ content }}
   <form action="https://formspree.io/twa63@sfu.ca" method="POST">
-	    <input type="email" placeholder="Email" name="email"><br>
-	    <textarea name="comment" placeholder="Message here..." style="height:100px;"></textarea><br>
+	    <i class="fa fa-user" aria-hidden="true"></i><input type="text" placeholder="Name" name="name"><br>
+	    <i class="fa fa-envelope" aria-hidden="true"></i><input type="email" placeholder="Email" name="email"><br>
+	    <i class="fa fa-comment" aria-hidden="true"></i><textarea name="comment" placeholder="Message" style="height:100px;"></textarea><br>
 	    <input type="submit" value="Send">
 	</form>
 </div>
