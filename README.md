@@ -1,1 +1,1 @@
-Theme [Kiko Plus](https://github.com/AWEEKJ/Kiko-plus)
+Theme: [Kiko Plus](https://github.com/AWEEKJ/Kiko-plus)
