@@ -20,8 +20,9 @@ layout: default
 <div class="page">
   {{ content }}
   <form action="https://formspree.io/twa63@sfu.ca" method="POST">
-	    <input type="text" name="name">
-	    <input type="email" name="_replyto">
+	    <input type="text" placeholder="Name" name="name"><br>
+	    <input type="email" placeholder="Email" name="email"><br>
+	    <textarea name="comment" placeholder="Message here..." style="height:100px;"></textarea>
 	    <input type="submit" value="Send">
 	</form>
 </div>
