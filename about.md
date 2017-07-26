@@ -1,9 +1,8 @@
 ---
-title: About
 permalink: /about/
 layout: page
 ---
 
-##test
+## Test
 
-###size
+### Contact
