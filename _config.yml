@@ -55,6 +55,8 @@ kramdown:
 
 # Navigation
 nav:
+  - name:	    "resume"
+    url:            "/resume"
   - name:	    "Work"
     url:            "/work"
   - name:	    "Projects"
