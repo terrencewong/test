@@ -3,7 +3,7 @@
 # # # # # # # # # # # # #
 
 # Basic
-name:               "Terrence Wong"
+name:               "terrence wong"
 
 author:
   facebook:         your-id
@@ -24,7 +24,7 @@ author:
 
 copyright:
   year:             2017
-  name:             Kiko
+  name:             
 
 # Google-analytics
 google-analytics:
@@ -32,7 +32,7 @@ google-analytics:
 
 # Disqus
 disqus:
-  id:               "kiko-plus"
+  id:               ""
 
 # URL
 url:                "https://terrencewong.github.io" # the base hostname & protocol for your site
@@ -41,7 +41,7 @@ baseurl:            "/" # the subpath of your site, e.g. /blog
 
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:           Asia/Seoul
+timezone:           America/Vancouver
 permalink:          /:year-:month-:day/:title/
 
 # Pagination
@@ -57,12 +57,16 @@ kramdown:
 nav:
   - name:           "About"
     url:            "/about"
+  - name:	    "Work"
+    url:            "/work"
+  - name:	    "Projects"
+    url:            "/projects"
   - name:           "Archive"
     url:            "/archive"
-  - name:           "Tags"
-    url:            "/tags"
+  - name:	    "Linkedin"
+    url:            "https://www.linkedin.com/in/tw604/"
   - name:           "Github"
-    url:            "https://terrencewong.github.io"
+    url:            "https://github.com/terrencewong"
 
 # Sass
 sass:
