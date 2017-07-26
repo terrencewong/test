@@ -1,10 +1,21 @@
 ---
 layout: default
 ---
-<header>
-  <div class="header-small">
-    <a href="{{site.url}}{{site.baseurl}}">{{ site.name }}</a>
+<header class="header">
+  <div class="header-title">
+    <a href="{{ site.url }}{{ site.baseurl }}">{{ site.name }}</a>
   </div>
+  <nav class="header-nav">
+    {% for nav in site.nav %}
+    {% if nav.url contains 'http://' or nav.url contains 'https://' %}
+    <a href="{{ nav.url }}">{{ nav.name }}</a>
+    {% else %}
+    <a href="{{ nav.url | prepend: site.baseurl }}">{{ nav.name }}</a>
+    {% endif %}
+    {% endfor %}&nbsp;&nbsp;|&nbsp;&nbsp;  
+    <a href="https://github.com/terrencewong"><i class="fa fa-github" aria-hidden="true"></i></a>&nbsp;&nbsp;
+    <a href="https://www.linkedin.com/in/tw604/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  </nav>
 </header>
 <div class="page">
   <div class="page-title">{{ page.title }}</div>

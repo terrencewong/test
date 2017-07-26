@@ -55,18 +55,12 @@ kramdown:
 
 # Navigation
 nav:
-  - name:           "About"
-    url:            "/about"
   - name:	    "Work"
     url:            "/work"
   - name:	    "Projects"
     url:            "/projects"
   - name:           "Archive"
     url:            "/archive"
-  - name:	    "Linkedin"
-    url:            "https://www.linkedin.com/in/tw604/"
-  - name:           "Github"
-    url:            "https://github.com/terrencewong"
 
 # Sass
 sass:
