@@ -5,9 +5,8 @@ title: projects
 
 <div class="archive">
   <div class="archive-list">
-  {% for category in site.categories %}
+  {% for post in site.categories.work %}
     <div class="archive-list-post">
-	{% for post in category[2] %}
       {% if post.link %}
       <a href="{{ post.link }}">
       {% else %}
@@ -19,7 +18,6 @@ title: projects
       </a>
 	{{ post.excerpt }}
     </div>
-      {% endfor %}
     {% endfor %}
   </div>
 </div>
