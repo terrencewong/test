@@ -5,9 +5,6 @@ description: "Demo post displaying the various ways of highlighting code in Mark
 tags: [sample post, code, highlighting]
 comments: true
 share: true
-categories:
-  - projects
-  - work
 ---
 
 
