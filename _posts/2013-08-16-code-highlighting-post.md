@@ -8,6 +8,7 @@ comments: true
 share: true
 categories:
   - projects
+  - work
 ---
 
 
