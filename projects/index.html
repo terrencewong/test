@@ -19,3 +19,24 @@ title: projects
     {% endfor %}
   </ul>
 {% endfor %}
+
+<div class="archive">
+  <div class="archive-list">
+  {% for category in site.categories %}
+    <div class="archive-list-post">
+	{% for post in category[1] %}
+      {% if post.link %}
+      <a href="{{ post.link }}">
+      {% else %}
+      <a href="{{ post.url | prepend: site.baseurl }}">
+      {% endif %}  
+        <span class="archive-list-post-title">
+          {{ post.title }}
+        </span>
+      </a>
+    </div>
+      {% endfor %}
+    {% endfor %}
+  {% endif %}
+  </div>
+</div>
