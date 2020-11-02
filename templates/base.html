@@ -8,19 +8,12 @@
 </head>
 
 <body>
-    <h1><a href="/">Appleseed's Blog</a></h1>
+    <h1><a href="{{ url_for("index") }}">Appleseed's Blog</a></h1>
 
     <div>
-        
-    <h2>Posts</h2>
-    <ul>
-    
-        <li>
-            <a href="/example-text/">My First Entry
-        </li>
-    
-    </ul>
-
+        {% block content %}
+        <p>Default Content</p>
+        {% endblock content %}
     </div>
 </body>
 </html>
